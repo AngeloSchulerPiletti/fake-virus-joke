@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/public/favicon-512.png"
+    />
+    <link rel="manifest" href="/public/site.webmanifest" />
+    <title>Criar Joke</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/new.css" />
+    <script src="/scripts/shared.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bem-vindo(a) ao criador de <span>Joke</span></h1>
+      <div class="form">
+        <p>
+          Preencha as informações para gerar seu link customizado e compartilhar
+          com seus amigos.
+        </p>
+        <label for="sender-name">
+          Nome de quem está enviando o link (opcional)
+          <input
+            type="text"
+            id="sender-name"
+            name="sender-name"
+            placeholder="Josézinho"
+        /></label>
+        <label for="fake-virus-file">
+          Nome do arquivo falso de vírus (opcional)
+          <input
+            type="text"
+            id="fake-virus-file"
+            name="fake-virus-file"
+            placeholder="trojan-virus-malicioso"
+        /></label>
+        <label for="final-message">
+          Mensagem final a ser apresentada após download (opcional)
+          <input
+            type="text"
+            id="final-message"
+            name="final-message"
+            placeholder="Vírus baixado com sucesso no seu aparelho"
+        /></label>
+        <button class="nice-button" id="generate-link">
+          Gerar link e copiar
+        </button>
+      </div>
+      <div id="link-container">
+        <span>Seu link foi copiado. Esse é ele:</span>
+        <span id="link-result"></span>
+      </div>
+    </div>
+  </body>
+  <script src="/scripts/new.js"></script>
+</html>

@@ -1,0 +1,74 @@
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  width: calc(100% - 50px);
+  margin: auto;
+}
+
+.rights {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.nice-button {
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  line-height: 42px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-inline: 20px;
+  border: none;
+  background: rgb(255, 27, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 27, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+}
+.nice-button:hover {
+  color: #f0094a;
+  background: transparent;
+  box-shadow: none;
+}
+.nice-button:before,
+.nice-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.nice-button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.nice-button:hover:before,
+.nice-button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
