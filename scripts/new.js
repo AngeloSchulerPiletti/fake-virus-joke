@@ -20,7 +20,7 @@ function generateLink(){
     if(Object.keys(paramsObj).length > 0)
         params = (new URLSearchParams(paramsObj)).toString();
     
-    return window.location.protocol + "//" + window.location.host + '/index.html?' + params;
+    return window.location.protocol + "//" + window.location.host + '/fake-virus-joke?' + params;
 }
 
 generateLinkEl.addEventListener("click", () => {
