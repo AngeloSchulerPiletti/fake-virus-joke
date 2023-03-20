@@ -54,5 +54,5 @@ downloadButton.addEventListener("click", () => {
     setTimeout(() => {
         finalEl.style.animation = "none";
         createTooEl.style.display = "block";
-    }, 6000);
+    }, 30000);
 });
